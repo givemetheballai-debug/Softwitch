@@ -24,10 +24,10 @@ export default function LoreRituals() {
           Tiny actions that shift your energy. Soft, modern, under-a-minute magic.
         </p>
         <p className="text-midnight-aubergine/70">
-          Rituals aren't about candles, herbs, or elaborate steps. They're micro-behaviors that help you feel grounded, clearer, and more connected to yourself.
+          Rituals are micro-behaviors that help you feel grounded, clearer, and more connected to yourself.
         </p>
         <p className="text-midnight-aubergine/70">
-          Nothing ceremonial. Nothing woo. Just intentional moments.
+          Simple, intentional, and immediate.
         </p>
       </motion.div>
 
