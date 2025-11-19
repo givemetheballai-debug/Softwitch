@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  /* New SoftWitch Colors */
+  --color-sw-purple: #6b4ba1;
+  --color-sw-pink: #ff6b9d;
+  --color-sw-rust: #c94c3c;
+  --color-sw-teal: #3ba89f;
+  --color-sw-yellow: #f4c761;
+  --color-sw-cream: #faf8f5;
+  
+  /* Legacy colors */
+  --color-champagne: #F6EDE3;
+  --color-dusty-lilac: #DCD4EC;
+  --color-glam-mauve: #C09AAE;
+  --color-midnight-aubergine: #2C1B2E;
+  --color-soft-gold: #D5B26E;
+  --color-black-cherry: #420B2C;
+  --color-vintage-teal: #4B6F77;
+  
+  --font-family-serif: 'DM Sans', sans-serif;
+  --font-family-sans: 'Inter', system-ui, sans-serif;
+  --font-family-display: 'DM Sans', sans-serif;
+}
+
+body {
+  background-image: url('https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=1600&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #1a1a2e;
+  color: var(--color-sw-purple);
+  font-family: var(--font-family-sans);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-serif);
+}
+
+.text-gradient-logo {
+  background: linear-gradient(135deg, #ff6b9d 0%, #f4c761 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-shadow-glow {
+  text-shadow: 0 0 20px rgba(255, 107, 157, 0.3);
+}
+
+.sparkle {
+  animation: sparkle 2s ease-in-out infinite;
+}
+
+@keyframes sparkle {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+
+.glow {
+  box-shadow: 0 0 30px rgba(255, 107, 157, 0.4);
+}
+
+.card-soft {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(107, 75, 161, 0.12);
+  transition: all 0.3s ease;
+}
+
+.card-soft:hover {
+  box-shadow: 0 8px 30px rgba(107, 75, 161, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Enhanced glow effects for magical feel */
+.shadow-glow-purple {
+  box-shadow: 0 0 40px rgba(107, 75, 161, 0.3), 0 8px 30px rgba(255, 107, 157, 0.2);
+}
+
+.shadow-soft {
+  box-shadow: 0 4px 20px rgba(107, 75, 161, 0.15);
+}
+
+/* Cosmic Snapshot - bigger, bolder, more fun, TIGHTER spacing */
+.cosmic-snapshot-title {
+  font-size: 2.5rem !important;
+  font-weight: 700 !important;
+  margin-bottom: 0.5rem !important;
+  line-height: 1.2 !important;
+  text-shadow: 0 2px 20px rgba(255, 107, 157, 0.4);
+}
+
+.cosmic-snapshot-date {
+  font-size: 1.125rem !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.cosmic-snapshot-details {
+  font-size: 1rem !important;
+  line-height: 1.5 !important;
+}
+
+.cosmic-snapshot-box {
+  background: rgba(255, 255, 255, 0.95);
+  border: 2px solid rgba(255, 107, 157, 0.4);
+  box-shadow: 0 0 40px rgba(255, 107, 157, 0.5), 0 8px 40px rgba(107, 75, 161, 0.4);
+}
+
+/* Product cards with more color */
+.product-card {
+  background: rgba(255, 255, 255, 0.95);
+  border: 2px solid rgba(255, 107, 157, 0.3);
+  box-shadow: 0 0 30px rgba(255, 107, 157, 0.4), 0 8px 30px rgba(107, 75, 161, 0.3);
+  transition: all 0.3s ease;
+}
+
+.product-card:hover {
+  background: rgba(255, 255, 255, 1);
+  border-color: rgba(255, 107, 157, 0.6);
+  box-shadow: 0 0 50px rgba(255, 107, 157, 0.6), 0 12px 40px rgba(107, 75, 161, 0.5);
+  transform: translateY(-4px);
+}
+
+/* Soft Magic boxes with glow borders */
+.magic-box {
+  background: white;
+  border: 2px solid rgba(255, 107, 157, 0.3);
+  box-shadow: 0 0 30px rgba(255, 107, 157, 0.4), 0 4px 20px rgba(107, 75, 161, 0.2);
+  transition: all 0.3s ease;
+}
+
+.magic-box:hover {
+  border-color: rgba(255, 107, 157, 0.6);
+  box-shadow: 0 0 50px rgba(255, 107, 157, 0.6), 0 8px 30px rgba(107, 75, 161, 0.3);
+  transform: scale(1.02);
+}
+
+/* House Rules and Philosophy hover sparkles */
+.sparkle-hover {
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.sparkle-hover:hover {
+  color: var(--color-sw-pink);
+  text-shadow: 0 0 15px rgba(255, 107, 157, 0.6), 0 0 30px rgba(244, 199, 97, 0.4);
+  transform: scale(1.05);
+}
+
+/* Section titles - all rust for consistency */
+.section-title {
+  color: var(--color-sw-rust) !important;
+  font-weight: 700 !important;
+  font-size: 2rem !important;
+}
+
+/* Emoji styling - bigger, glowing, subtle animation */
+.emoji-magic {
+  display: inline-block;
+  font-size: 1.5em;
+  filter: drop-shadow(0 0 8px rgba(255, 107, 157, 0.4));
+  animation: emoji-pulse 3s ease-in-out infinite;
+}
+
+@keyframes emoji-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+/* Varied link colors */
+.link-teal {
+  color: var(--color-sw-teal);
+  font-weight: 600;
+}
+
+.link-teal:hover {
+  color: var(--color-sw-rust);
+  text-shadow: 0 0 10px rgba(201, 76, 60, 0.3);
+}
+
+.link-rust {
+  color: var(--color-sw-rust);
+  font-weight: 600;
+}
+
+.link-rust:hover {
+  color: var(--color-sw-teal);
+  text-shadow: 0 0 10px rgba(59, 168, 159, 0.3);
+}
+
+.link-pink {
+  color: var(--color-sw-pink);
+  font-weight: 600;
+}
+
+.link-pink:hover {
+  color: var(--color-sw-yellow);
+  text-shadow: 0 0 10px rgba(244, 199, 97, 0.3);
+}
+
+/* Colored section borders */
+.border-gradient-top {
+  border-top: 3px solid transparent;
+  border-image: linear-gradient(90deg, var(--color-sw-teal), var(--color-sw-pink), var(--color-sw-rust)) 1;
+  padding-top: 3rem;
+}
+
+.border-gradient-bottom {
+  border-bottom: 3px solid transparent;
+  border-image: linear-gradient(90deg, var(--color-sw-rust), var(--color-sw-yellow), var(--color-sw-teal)) 1;
+  padding-bottom: 3rem;
+}
+
+/* Background gradient sections - subtle color shifts */
+.bg-gradient-soft-pink {
+  background: linear-gradient(180deg, transparent 0%, rgba(255, 107, 157, 0.03) 100%);
+}
+
+.bg-gradient-soft-teal {
+  background: linear-gradient(180deg, transparent 0%, rgba(59, 168, 159, 0.03) 100%);
+}
+
+.bg-gradient-soft-rust {
+  background: linear-gradient(180deg, transparent 0%, rgba(201, 76, 60, 0.03) 100%);
+}
+
+/* Nav text bigger */
+.nav-link {
+  font-size: 1.125rem !important;
+  font-weight: 500 !important;
+}
+
+/* Footer with color */
+.footer-colored {
+  background: linear-gradient(135deg, rgba(107, 75, 161, 0.1) 0%, rgba(255, 107, 157, 0.1) 100%);
+  border-top: 2px solid rgba(107, 75, 161, 0.2);
+}
